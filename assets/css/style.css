@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #856088;
+}
+
+.content-container {
+    background-color: #EFEFEF;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.navigation {
+    top: 0;
+    position: sticky;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.navigation a { /*all elements in here will be anchor tags so this is fine*/
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF; 
+    background-color: #330033;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 33.33%;
+    /*width: 25%;*/
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.navigation a:hover {
+    color: #330033;
+    background-color: #FFFFFF;
+}
+
+.navigation .current {
+    color: #330033;
+    background-color: #FFFFFF;
+}
+
+.resume {
+    border: none;
+    display: block;
+    width: 95%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3rem;
+}
+
+.me {
+    max-width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 2rem;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #C6C6C6;
+}
+
+.announcement {
+    padding: 1rem;
+}
+
+.about-me {
+    text-align: center;
+}
+
+.project-entry {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.project-entry img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .navigation {
+        position: static;
+        margin-bottom: 6rem;
+    }
+
+    .navigation a {
+        display: block;
+	    width: 100%;
+    }
+}
